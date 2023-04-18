@@ -1,4 +1,21 @@
+const navOpen = document.getElementById('navbar-open');
+const navClose = document.getElementById('navbar-close');
+const navSpacer = document.getElementById('navbar-spacer');
+const menu = document.getElementById('menu');
 const mainLogo = document.getElementById('main-logo');
+
+// Gestion de la Navbar latérale
+function openNavbar() {
+    navOpen.style.display = "none";
+    navSpacer.style.display = "block";
+    menu.style.display = "block";
+}
+
+function closeNavbar() {
+    navOpen.style.display = "block";
+    navSpacer.style.display = "none";
+    menu.style.display = "none";
+}
 
 // Définition du Cookie
 function setCookie(cname, cvalue, exdays) {
@@ -51,3 +68,6 @@ if (cookie_consent != ""){
 window.onload = () => {
     mainLogo.setAttribute('class', 'non-transparent main-logo');
 }
+
+navOpen.addEventListener('click', openNavbar);
+navClose.addEventListener('click', closeNavbar);
