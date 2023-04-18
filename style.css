@@ -1,0 +1,41 @@
+html,
+body {
+  min-height: 100vh;
+  background-image: url("/assets/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-logo {
+  width: 40%;
+  min-width: 350px;
+  height: auto;
+  opacity: 1;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.non-transparent {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+#cookieNotice {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(#fff8b4, #d4ba44);
+  padding: 15px;
+}/*# sourceMappingURL=style.css.map */
