@@ -1,20 +1,20 @@
-const navOpen = document.getElementById('navbar-open');
-const navClose = document.getElementById('navbar-close');
-const navSpacer = document.getElementById('navbar-spacer');
+const navToogler = document.getElementById('navbar-toogle');
 const menu = document.getElementById('menu');
+const menuOpen = document.getElementById('menu-open');
+const menuClose = document.getElementById('menu-close');
 const mainLogo = document.getElementById('main-logo');
 
 // Gestion de la Navbar latérale
-function openNavbar() {
-    navOpen.style.display = "none";
-    navSpacer.style.display = "block";
-    menu.style.display = "block";
-}
-
-function closeNavbar() {
-    navOpen.style.display = "block";
-    navSpacer.style.display = "none";
-    menu.style.display = "none";
+function toogleNavbar() {
+    if (menu.offsetWidth == "0") {
+        menu.style.width = "400px";
+        menuOpen.style.display = "none";
+        menuClose.style.display = "block";
+    } else {
+        menu.style.width = "0";
+        menuOpen.style.display = "block";
+        menuClose.style.display = "none";
+    }
 }
 
 // Définition du Cookie
@@ -69,5 +69,4 @@ window.onload = () => {
     mainLogo.setAttribute('class', 'non-transparent main-logo');
 }
 
-navOpen.addEventListener('click', openNavbar);
-navClose.addEventListener('click', closeNavbar);
+navToogler.addEventListener('click', toogleNavbar);

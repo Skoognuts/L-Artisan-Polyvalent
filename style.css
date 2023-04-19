@@ -7,9 +7,14 @@ body {
 }
 
 .navbar-toggler {
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 2;
   padding: 8px;
   margin: 5px 0 0 5px;
   border: 1px solid #000000;
@@ -22,15 +27,31 @@ body {
 }
 
 .menu {
-  position: fixed;
-  left: 0;
-  width: 400px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 80px;
+  background: rgba(255, 255, 255, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-.navbar-spacer {
-  height: 47px;
+.nav-item {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  width: 100%;
+  padding-left: 32px;
+}
+
+.nav-link:hover {
+  background: rgba(228, 209, 109, 0.5);
 }
 
 .logo-wrapper {
@@ -70,6 +91,7 @@ body {
 }
 
 #cookieNotice {
+  z-index: 3;
   width: 100%;
   position: fixed;
   bottom: 0;
