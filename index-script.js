@@ -3,6 +3,7 @@ const menu = document.getElementById('menu');
 const menuOpen = document.getElementById('menu-open');
 const menuClose = document.getElementById('menu-close');
 const mainLogo = document.getElementById('main-logo');
+const indexContactWrapper = document.getElementById('index-contact-wrapper');
 
 // Gestion de la Navbar latérale
 function toogleNavbar() {
@@ -66,7 +67,8 @@ if (cookie_consent != ""){
 }
 
 window.onload = () => {
-    mainLogo.setAttribute('class', 'non-transparent main-logo');
+    mainLogo.setAttribute('class', 'main-logo non-transparent');
+    indexContactWrapper.setAttribute('class', 'index-contact-wrapper flex-column flex-lg-row mt-3 non-transparent')
 }
 
 navToogler.addEventListener('click', toogleNavbar);

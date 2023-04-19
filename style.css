@@ -6,6 +6,29 @@ body {
   background-size: cover;
 }
 
+.index-contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-contact {
+  padding-block: 10px;
+  padding-inline: 15px;
+  color: #000000;
+  text-decoration: none;
+  border: #0f70b7 solid 1px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #838383 !important;
+  background: rgba(15, 112, 183, 0.2);
+  font-weight: 600;
+}
+
+.index-contact:hover {
+  box-shadow: none !important;
+  color: #000000;
+}
+
 .navbar-toggler {
   position: fixed;
   display: flex;
@@ -17,9 +40,10 @@ body {
   z-index: 2;
   padding: 8px;
   margin: 5px 0 0 5px;
-  border: 1px solid #000000;
+  border: #0f70b7 solid 1px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #838383 !important;
+  background: rgba(15, 112, 183, 0.2);
 }
 
 .navbar-toggler:hover {
@@ -48,6 +72,7 @@ body {
   font-size: 1.3rem;
   width: 100%;
   padding-left: 32px;
+  font-weight: bold;
 }
 
 .nav-link:hover {
@@ -56,10 +81,11 @@ body {
 
 .logo-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75vh;
+  height: 95vh;
 }
 
 .main-logo {
@@ -90,6 +116,42 @@ body {
           animation: slide-bottom 0.5s ease-in-out infinite alternate both;
 }
 
+.white-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000000;
+  padding: 10px;
+  color: #fff;
+}
+
+.footer-link {
+  color: #fff;
+}
+
+.footer-link:active,
+.footer-link:hover {
+  color: #e4d16d;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.gallerie {
+  width: 370px;
+  height: auto;
+  border: 10px solid #fff;
+}
+
 #cookieNotice {
   z-index: 3;
   width: 100%;
@@ -115,4 +177,18 @@ body {
   100% {
     transform: translateY(30px);
   }
+}
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.dev > p {
+  text-align: center;
+}
+
+.notice {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
