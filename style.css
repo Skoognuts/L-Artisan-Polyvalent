@@ -190,7 +190,6 @@ main {
   background: red;
   background-image: url("/assets/l-artisan-polyvalent-004.JPG");
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   filter: sepia();
 }
