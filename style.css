@@ -187,8 +187,14 @@ main {
 }
 
 .paint-title {
-  background: red;
   background-image: url("/assets/l-artisan-polyvalent-004.JPG");
+  background-position: center;
+  background-size: cover;
+  filter: sepia();
+}
+
+.plaster-title {
+  background-image: url("/assets/l-artisan-polyvalent-006.JPG");
   background-position: center;
   background-size: cover;
   filter: sepia();
