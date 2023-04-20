@@ -1,9 +1,15 @@
 html,
 body {
-  min-height: 110vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url("/assets/background.jpg");
   background-attachment: fixed;
   background-size: cover;
+}
+
+main {
+  margin-top: 60px;
 }
 
 .index-contact-wrapper {
@@ -70,9 +76,11 @@ body {
 
 .nav-link {
   font-size: 1.3rem;
-  width: 100%;
-  padding-left: 32px;
+  width: 362px;
+  margin-left: 16px;
+  padding-left: 16px;
   font-weight: bold;
+  border-radius: 15px;
 }
 
 .nav-link:hover {
@@ -128,6 +136,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: auto;
   background: #000000;
   text-align: center;
   padding: 10px;
