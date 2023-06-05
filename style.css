@@ -200,6 +200,32 @@ main {
   filter: sepia();
 }
 
+.wood-title {
+  background-image: url("/assets/l-artisan-polyvalent-008.JPG");
+  background-position: center;
+  background-size: cover;
+  filter: sepia();
+}
+
+.realisations-title {
+  background-image: url("/assets/l-artisan-polyvalent-012.JPG");
+  background-position: center;
+  background-size: cover;
+  filter: sepia();
+}
+
+.contact-title {
+  background-image: url("/assets/l-artisan-polyvalent-017.JPG");
+  background-position: center;
+  background-size: cover;
+  filter: sepia();
+}
+
+.spacer {
+  width: 30%;
+  border-bottom: 1px solid #000;
+}
+
 footer {
   z-index: 4;
   display: flex;
